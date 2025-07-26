@@ -54,6 +54,12 @@ main>section,
     background-color: #bf4a06;
 }
 
+.dark-text {
+    color: #252432;
+    /* color: red; */
+    font-weight: bold;
+}
+
 .title {
     font-size: 3rem;
     font-weight: bold;
@@ -68,6 +74,10 @@ main>section,
 
 .margin-bottom {
     margin-bottom: 100px;
+}
+
+.display-none {
+    display: none;
 }
 
 /* Unique codes */
@@ -300,4 +310,30 @@ input:focus {
     justify-content: center;
     align-items: center;
     width: 150px;
+}
+
+/* ------Footer Section------- */
+.footer-all-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 50px 0;
+    align-items: flex-start;
+}
+
+.footer-all-links ul li {
+    list-style: none;
+    margin-bottom: 25px;
+    color: var(--primary-color);
+}
+
+.footer-all-links .footer-social-links {
+    display: inline-block;
+    display: inline-flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.footer-all-links .footer-nav-1 {
+    margin-left: 70px;
 }

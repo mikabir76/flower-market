@@ -1,0 +1,55 @@
+/* Responsive for Mobile Device */
+@media screen and (max-width: 576px) {
+    .container {
+        margin: 20px;
+    }
+
+    .nav-links li {
+        display: none;
+    }
+
+    .nav-links li:nth-child(4) {
+        display: block;
+    }
+
+    .banner,
+    {
+    flex-direction: column-reverse;
+    /* width: 100%; */
+}
+
+.banner-content {
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.banner-title,
+.title {
+    font-size: 2rem;
+}
+
+.cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.cards-container img {
+    width: 100%;
+}
+
+.trusted {
+    flex-direction: column;
+}
+
+.trusted img {
+    width: 100%;
+}
+
+.trusted-icon {
+    display: none;
+}
+}

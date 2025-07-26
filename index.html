@@ -14,6 +14,7 @@
         rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
     <!-- Font Awesome CDN - Control Delivery Network. -->
     <script src="https://kit.fontawesome.com/2ddc66125a.js" crossorigin="anonymous"></script>
 </head>
@@ -23,10 +24,10 @@
         <nav class="navbar">
             <img src="./assets/logo.png" alt="" class="logo">
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
+                <li><a class="dark-text" href="#">Home</a></li>
                 <li><a href="#">Shop</a></li>
                 <li><a href="#">About us</a></li>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a></li>
+                <li><a class="dark-text" href="#"><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a></li>
             </ul>
         </nav>
         <div class="banner">
@@ -128,8 +129,8 @@
                 </ul>
             </div>
         </section>
-        <section class="latest-deals container">
-            <h3 class="title">Latest Deals</h3>
+        <section class="latest-deals display-none container">
+            <h3 class="title"><span class="colorful-text">Latest</span> Deals</h3>
             <p class="description margin-bottom">Indulge your senses with the beauty and fragrance of our fresh flower
                 shop. From
                 classic roses to exotic blooms, we offer a wide variety of fresh.</p>
@@ -156,7 +157,7 @@
             </div>
         </section>
 
-        <section class="email">
+        <section class="email display-none">
             <div class="email-area">
                 <h3 class="email-title">
                     Join the colorful Bunch
@@ -168,8 +169,37 @@
             </div>
         </section>
     </main>
-    <footer class="container">
-
+    <footer class="container display-none">
+        <div class="footer-all-links">
+            <div class="footer-logo">
+                <img src="./assets/logo.png" alt="">
+                <p class="description">Indulge your senses with the beauty and fragrance of our fresh flower shop. </p>
+            </div>
+            <div class="footer-nav-1">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-2">
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#"> Help Center</a></li>
+                </ul>
+            </div>
+            <div class="footer-social-links">
+                <img src="./assets/icon-facebook.png" alt="">
+                <img src="./assets/icon-linkedin.png" alt="">
+                <img src="./assets/icon-twitter.png" alt="">
+                <img src="./assets/icon-youtube.png" alt="">
+            </div>
+        </div>
     </footer>
 </body>
 
