@@ -91,6 +91,7 @@ main>section,
 
 .logo {
     width: 135px;
+    cursor: pointer;
 }
 
 .nav-links {
@@ -191,6 +192,18 @@ main>section,
     top: -90px;
     width: auto;
     /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); */
+    animation: spining 4s linear infinite
+}
+
+/* Animation Area */
+@keyframes spining {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .trusted .trusted-text {
@@ -206,6 +219,16 @@ main>section,
 
 
 /* Latest Deals */
+.latest-deals {
+    /* text-align: center; */
+
+}
+
+/* .latest-deals .description {
+    max-width: 700px;
+    margin: 0 auto 20px;
+} */
+
 .latest-deal-shop {
     display: flex;
     gap: 20px;
