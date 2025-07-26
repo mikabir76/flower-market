@@ -24,8 +24,50 @@ a {
     text-decoration: none;
 }
 
-img {
+/* img {
     width: 100%;
+} */
+
+main>section,
+.our-plants {
+    margin-top: 100px;
+}
+
+.colorful-text {
+    color: var(--orange-color);
+}
+
+.btn-primary {
+    background-color: var(--orange-color);
+    width: 100%;
+    text-align: center;
+    border: none;
+    padding: 10px 50px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.btn-primary:hover {
+    background-color: #bf4a06;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Noto Serif", serif;
+
+}
+
+.description {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.margin-bottom {
+    margin-bottom: 100px;
 }
 
 /* Unique codes */
@@ -65,16 +107,152 @@ img {
     font-weight: bold;
 }
 
-.banner-title .colorful-text {
-    color: var(--orange-color);
-}
+
 
 .banner-content .description {
     color: var(--primary-color);
     font-size: 1rem;
     max-width: 450px;
+    margin-top: 16px;
 }
 
 .banner-img {
     flex: 1;
+}
+
+/* ------- Our Plants Section ----------- */
+.our-plants {
+    text-align: center;
+}
+
+.our-plants .description {
+    max-width: 700px;
+    margin: 16px auto;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px 20px;
+}
+
+.single-card img {
+    max-height: 322px;
+}
+
+.card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.single-card .card-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.single-card .price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Trusted Area */
+.trusted {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin: 100px auto;
+}
+
+.images-area {
+    position: relative;
+    display: inline-block;
+}
+
+.trusted-img {
+    display: block;
+}
+
+.trusted-icon {
+    position: absolute;
+    max-width: 250px;
+    right: -90px;
+    top: -90px;
+    width: auto;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); */
+}
+
+.trusted .trusted-text {
+    max-width: 450px;
+}
+
+.trusted-text li {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin: 20px 0;
+
+}
+
+
+/* Latest Deals */
+.latest-deal-shop {
+    display: flex;
+    gap: 20px;
+}
+
+.shop-left {
+    width: 30%;
+}
+
+.shop-left .shop-1 {
+    background-image: url(../assets/deal-ana.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 220px;
+    border-radius: 15px;
+    position: relative;
+    color: white;
+}
+
+.shop-left .shop-1::before,
+.shop-left .shop-2::before,
+.shop-right .shop-3::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(26, 25, 25, 0.4);
+    /* orange with 40% opacity */
+    z-index: 1;
+}
+
+.shop-left .shop-2 {
+    background-image: url(../assets/deal-bloom.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 220px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.shop-right {
+    flex: 1;
+}
+
+.shop-right .shop-3 {
+    background-image: url(../assets/deal-zabo.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 430px;
+    border-radius: 15px;
+    position: relative;
+}
+
+/* Email Section */
+.email {
+    width: 100%;
+    height: 530px;
+    background-image: url(../assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
