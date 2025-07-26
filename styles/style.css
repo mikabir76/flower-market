@@ -13,6 +13,7 @@
 body {
     /* font-family: "Noto Serif", serif; */
     font-family: "Inter", serif;
+    /* overflow-x: hidden; */
 }
 
 .container {
@@ -268,10 +269,6 @@ main>section,
     position: relative;
 }
 
-.email-area input {
-    display: inline-block;
-}
-
 .input-field {
     display: flex;
 }
@@ -298,6 +295,7 @@ main>section,
     height: 50px;
     color: var(--primary-color);
     outline: none;
+    display: inline-block;
 }
 
 input:focus {
