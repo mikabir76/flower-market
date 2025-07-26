@@ -100,4 +100,13 @@
     .email-area .email-title {
         font-size: 1.5rem;
     }
+
+    .footer-all-links {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .footer-all-links .footer-nav-1 {
+        margin-left: 0;
+    }
 }
