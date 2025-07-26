@@ -13,7 +13,6 @@
 body {
     /* font-family: "Noto Serif", serif; */
     font-family: "Inter", serif;
-    /* overflow-x: hidden; */
 }
 
 .container {
@@ -246,18 +245,20 @@ main>section,
     border-radius: 15px;
     position: relative;
     color: white;
+    background-size: cover;
+    background-position: center;
 }
 
-.shop-left .shop-1::before,
+/* .shop-left .shop-1::before,
 .shop-left .shop-2::before,
 .shop-right .shop-3::before {
     content: "";
     position: absolute;
     inset: 0;
     background-color: rgba(26, 25, 25, 0.4);
-    /* orange with 40% opacity */
+    
     z-index: 1;
-}
+} */
 
 .shop-left .shop-2 {
     background-image: url(../assets/deal-bloom.png);
@@ -266,10 +267,19 @@ main>section,
     height: 220px;
     border-radius: 15px;
     position: relative;
+    background-size: cover;
+    background-position: center;
 }
 
 .shop-right {
-    flex: 1;
+    flex-basis: 70%;
+}
+
+.shop-left .shop-1,
+.shop-left .shop-2,
+.shop-right .shop-3 {
+    overflow: hidden;
+    border-radius: 15px;
 }
 
 .shop-right .shop-3 {
@@ -279,6 +289,8 @@ main>section,
     height: 430px;
     border-radius: 15px;
     position: relative;
+    background-size: cover;
+    background-position: center;
 }
 
 /* Email Section */
