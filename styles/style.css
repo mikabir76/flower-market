@@ -219,18 +219,19 @@ main>section,
 
 /* Latest Deals */
 .latest-deals {
-    /* text-align: center; */
+    text-align: center;
 
 }
 
-/* .latest-deals .description {
+.latest-deals .description {
     max-width: 700px;
-    margin: 0 auto 20px;
-} */
+    margin: 0 auto 100px;
+}
 
 .latest-deal-shop {
     display: flex;
     gap: 20px;
+
 }
 
 .shop-left {
@@ -401,7 +402,9 @@ input:focus {
     margin-left: 70px;
 }
 
-
+.footer-nav-1 ul a {
+    color: var(--primary-color);
+}
 
 /* Responsive for Mobile Device */
 @media screen and (max-width: 576px) {
@@ -430,10 +433,13 @@ input:focus {
     .banner {
         flex-direction: column-reverse;
         /* width: 100%; */
+        align-items: flex-start;
+
     }
 
     .banner-content {
         text-align: left;
+        max-width: 75%;
     }
 
     .banner img {
@@ -478,6 +484,10 @@ input:focus {
     .latest-deal-shop {
         gap: 20px;
         width: 100%;
+    }
+
+    .latest-deals .description {
+        margin-bottom: 30px;
     }
 
     .shop-left {
