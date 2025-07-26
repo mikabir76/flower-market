@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgba(0, 0, 0, 0.5);
+    --orange-color: #E95A08;
+}
+
+/* Shared Codes */
+body {
+    /* font-family: "Noto Serif", serif; */
+    font-family: "Inter", serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* Unique codes */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.logo {
+    width: 135px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links li {
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+.banner {
+    display: flex;
+    align-items: flex-end;
+}
+
+.banner-content {
+    max-width: 550px;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.banner-title .colorful-text {
+    color: var(--orange-color);
+}
+
+.banner-content .description {
+    color: var(--primary-color);
+    font-size: 1rem;
+    max-width: 450px;
+}
+
+.banner-img {
+    flex: 1;
+}
